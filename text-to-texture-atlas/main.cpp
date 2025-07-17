@@ -5,6 +5,7 @@
 
 int main()
 {
+	/*
 	auto before{ std::chrono::system_clock::now() };
 	//text_to_texture_atlas::Font arial("arial.ttf", 600, 600);
 	text_to_texture_atlas::Font::Font_Px("arial.ttf", 600, 600);
@@ -18,6 +19,7 @@ int main()
 
 	//std::string path{ "C:/Users/Luke - Home/Desktop/New folder/test3.png" };
 	//text_to_texture_atlas::character_to_png::character_to_png(path, atlas.atlas_buffer, atlas.width, atlas.height);
+	*/
 
 	return 0;
 

@@ -12,9 +12,6 @@
     <Filter Include="font">
       <UniqueIdentifier>{4987433c-e661-4a86-a515-c679e7b673d1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="font\FontToPng">
-      <UniqueIdentifier>{e97956ab-9023-4561-a804-3e30bcb63ecd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -23,16 +20,10 @@
     <ClCompile Include="Font.cpp">
       <Filter>font</Filter>
     </ClCompile>
-    <ClCompile Include="FontToPng.cpp">
-      <Filter>font\FontToPng</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Font.hpp">
       <Filter>font</Filter>
-    </ClInclude>
-    <ClInclude Include="FontToPng.hpp">
-      <Filter>font\FontToPng</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

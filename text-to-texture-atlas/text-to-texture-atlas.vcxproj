@@ -127,12 +127,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Font.cpp" />
-    <ClCompile Include="FontToPng.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Font.hpp" />
-    <ClInclude Include="FontToPng.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
