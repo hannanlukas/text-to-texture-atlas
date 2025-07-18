@@ -28,6 +28,10 @@ This library takes TrueType font files and generates optimized texture atlases c
 
 ## Usage
 
+### Detailed Documentation
+
+[Documentation](https://hannanlukas.github.io/text-to-texture-atlas/)
+
 ### Basic Example
 
 ```cpp
