@@ -7,6 +7,9 @@
 
 #include "texture-operations/texture_operations.h"
 
+#include "spdlog/spdlog.h"
+#include <spdlog/sinks/stdout_color_sinks.h>
+
 //#define DEBUGGING
 
 #pragma region character::output_raw
@@ -258,11 +261,13 @@ text_to_texture_atlas::Font::Font
 	char_width_dpi_(char_width_dpi),
 	char_height_dpi_(char_height_dpi)
 {
+	const auto logger = spdlog::stdout_color_mt("console");
+
 	if (!error_)
 	{
 		if (!init_library())
 		{
-			std::cout << "error init library\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing freetype library");
 			error_ = true;
 		}
 	}
@@ -270,7 +275,7 @@ text_to_texture_atlas::Font::Font
 	{
 		if (!init_face())
 		{
-			std::cout << "error init face\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing freetype face");
 			error_ = true;
 		}
 	}
@@ -278,7 +283,7 @@ text_to_texture_atlas::Font::Font
 	{
 		if (!init_char_size())
 		{
-			std::cout << "error init char_size\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing freetype character size");
 			error_ = true;
 		}
 	}
@@ -287,7 +292,7 @@ text_to_texture_atlas::Font::Font
 
 		if (!init_character_map())
 		{
-			std::cout << "error init char map\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing character map");
 			error_ = true;
 		}
 	}
@@ -295,7 +300,7 @@ text_to_texture_atlas::Font::Font
 	{
 		if (!init_main_atlas_buffer())
 		{
-			std::cout << "error init atlas buffer\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing atlas buffer");
 			error_ = true;
 		}
 	}
@@ -311,11 +316,12 @@ text_to_texture_atlas::Font::Font(
 		char_width_px_(char_width),
 		char_height_px_(char_height)
 {
+	const auto logger = spdlog::stdout_color_mt("console");
 	if (!error_)
 	{
 		if (!init_library())
 		{
-			std::cout << "error init library\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing freetype library");
 			error_ = true;
 		}
 	}
@@ -323,7 +329,7 @@ text_to_texture_atlas::Font::Font(
 	{
 		if (!init_face())
 		{
-			std::cout << "error init face\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing freetype face");
 			error_ = true;
 		}
 	}
@@ -331,7 +337,7 @@ text_to_texture_atlas::Font::Font(
 	{
 		if (!init_pixel_size())
 		{
-			std::cout << "error init char_size\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing freetype pixel size");
 			error_ = true;
 		}
 	}
@@ -340,7 +346,7 @@ text_to_texture_atlas::Font::Font(
 
 		if (!init_character_map())
 		{
-			std::cout << "error init char map\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing character map");
 			error_ = true;
 		}
 	}
@@ -348,7 +354,7 @@ text_to_texture_atlas::Font::Font(
 	{
 		if (!init_main_atlas_buffer())
 		{
-			std::cout << "error init atlas buffer\n";
+			SPDLOG_LOGGER_ERROR(logger, "Error initializing atlas buffer");
 			error_ = true;
 		}
 	}

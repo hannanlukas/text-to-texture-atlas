@@ -1,5 +1,4 @@
 #include "Font.hpp"
-#include "FontToPng.hpp"
 
 #include <chrono>
 
@@ -7,7 +6,12 @@ int main()
 {
 	/*
 	auto before{ std::chrono::system_clock::now() };
-	//text_to_texture_atlas::Font arial("arial.ttf", 600, 600);
+	auto arial = text_to_texture_atlas::Font::Font_Px("arial.tff", 100, 100);
+	auto char_a = arial.get_character('a');
+	char_a.output_raw();
+	char_a.output_buffer_positions();
+	char_a.output_texture_coordinates();
+	/*
 	text_to_texture_atlas::Font::Font_Px("arial.ttf", 600, 600);
 	auto after{ std::chrono::system_clock::now() };
 	auto check = after - before;
