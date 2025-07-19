@@ -24,9 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "Text_to_texture_atlas", "index.html", [
-    [ "Classes", "annotated.html", [
+  [ "Text To Texture Atlas", "index.html", [
+    [ "Namespaces", "namespaces.html", [
       [ "Font Documentation", "index.html#autotoc_md0", null ],
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    ] ],
+    [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
@@ -36,14 +39,18 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_font_8hpp_source.html"
+"_font_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,0 +1,5 @@
+<map id="text_to_texture_atlas::Font::character::vector2" name="text_to_texture_atlas::Font::character::vector2">
+<area shape="rect" id="Node000001" title="A simple 2D vector using unsigned integer coordinates." alt="" coords="5,125,174,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="70,5,109,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,48,92,125,87,125,87,48"/>
+</map>

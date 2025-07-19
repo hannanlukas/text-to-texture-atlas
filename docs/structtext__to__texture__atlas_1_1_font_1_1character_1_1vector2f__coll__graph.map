@@ -1,0 +1,5 @@
+<map id="text_to_texture_atlas::Font::character::vector2f" name="text_to_texture_atlas::Font::character::vector2f">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,125,178,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="68,5,115,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,48,94,125,89,125,89,48"/>
+</map>
