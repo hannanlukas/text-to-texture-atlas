@@ -2,6 +2,10 @@
 
 A C++20 library that converts font objects from FreeType to 4-channel RGBA texture atlases for use in OpenGL and other graphics APIs.
 
+## Documentation
+
+### *[Documentation](https://hannanlukas.github.io/text-to-texture-atlas/)*
+
 ## Description
 
 This library takes TrueType font files and generates optimized texture atlases containing all printable ASCII characters. Each character is rendered with antialiasing and packed efficiently into a single RGBA texture that can be used directly with graphics APIs like OpenGL.
@@ -27,10 +31,6 @@ This library takes TrueType font files and generates optimized texture atlases c
 - **C++20**: Modern C++ features and standard library
 
 ## Usage
-
-### Detailed Documentation
-
-[Documentation](https://hannanlukas.github.io/text-to-texture-atlas/)
 
 ### Basic Example
 
